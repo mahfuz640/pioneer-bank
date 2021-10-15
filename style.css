@@ -36,3 +36,10 @@ h1 {
 .balance {
     background-color: orange;
 }
+
+.status {
+    margin-top: 0 20px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
