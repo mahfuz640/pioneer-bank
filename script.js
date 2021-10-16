@@ -10,7 +10,7 @@ loginBtn.addEventListener("click", function() {
     // deposite button event handler
 const depositBtn = document.getElementById("addDeposit")
 depositBtn.addEventListener("click", function() {
-    const depositAmounts = document.getElementById("depositAmount").value;
+    const depositAmounts = document.getElementById("depositAmount").value; //value add hoi in
     const depositNumber = parseFloat(depositAmounts)
 
     const currentDeposit = document.getElementById("currentDeposit").innerText;
@@ -18,5 +18,5 @@ depositBtn.addEventListener("click", function() {
     const totalDeposit = depositNumber + currentDepositNumber;
 
     document.getElementById("currentDeposit").innerText = totalDeposit;
-    document.getElementById("depositAmount").value = ""
+    document.getElementById("depositAmount").value = "";
 })
