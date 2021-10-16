@@ -12,4 +12,11 @@ const depositBtn = document.getElementById("addDeposit")
 depositBtn.addEventListener("click", function() {
     const depositAmounts = document.getElementById("depositAmount").value;
     const depositNumber = parseFloat(depositAmounts)
+
+    const currentDeposit = document.getElementById("currentDeposit").innerText;
+    const currentDepositNumber = parseFloat(currentDeposit);
+    const totalDeposit = depositNumber + currentDepositNumber;
+
+    document.getElementById("currentDeposit").innerText = totalDeposit;
+    document.getElementById("depositAmount").value = ""
 })
