@@ -8,4 +8,8 @@ loginBtn.addEventListener("click", function() {
         transactionArea.style.display = "block";
     })
     // deposite button event handler
-const depositeBtn = document.getElementById("addDeposit")
+const depositBtn = document.getElementById("addDeposit")
+depositBtn.addEventListener("click", function() {
+    const depositAmounts = document.getElementById("depositAmount").value;
+    const depositNumber = parseFloat(depositAmounts)
+})
