@@ -24,6 +24,14 @@ depositBtn.addEventListener("click", function() {
     const totalBalance = depositNumber + currentBalanceNumber;
     document.getElementById("currentBalance").innerText = totalBalance
 
-
     document.getElementById("depositAmount").value = "";
 })
+
+// add function
+functionl updateSpanText(id, depositNumber) {
+    const current = document.getElementById(id).innerText
+    const currentNumber = parseFloat(current)
+    const totalAmount = depositAmount + currentNumber
+    document.getElementById(id).innerText = totalAmount
+
+}
