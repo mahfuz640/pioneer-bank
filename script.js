@@ -10,28 +10,20 @@ loginBtn.addEventListener("click", function() {
     // deposite button event handler
 const depositBtn = document.getElementById("addDeposit")
 depositBtn.addEventListener("click", function() {
-    const depositAmounts = document.getElementById("depositAmount").value; //value add hoi in
+    const depositAmounts = document.getElementById("depositAmount").value;
     const depositNumber = parseFloat(depositAmounts)
 
-    const currentDeposit = document.getElementById("currentDeposit").innerText;
-    const currentDepositNumber = parseFloat(currentDeposit);
-    const totalDeposit = depositNumber + currentDepositNumber;
-
-    document.getElementById("currentDeposit").innerText = totalDeposit;
-
-    const currentBalance = document.getElementById("currentBalance").innerText;
-    const currentBalanceNumber = parseFloat(currentBalance);
-    const totalBalance = depositNumber + currentBalanceNumber;
-    document.getElementById("currentBalance").innerText = totalBalance
+    updateSpanText("currentDeposit", depositNumber);
+    updateSpanText("currentBalance", depositNumber);
 
     document.getElementById("depositAmount").value = "";
 })
 
 // add function
-functionl updateSpanText(id, depositNumber) {
+function updateSpanText(id, depositNumber) {
     const current = document.getElementById(id).innerText
     const currentNumber = parseFloat(current)
-    const totalAmount = depositAmount + currentNumber
+    const totalAmount = depositNumber + currentNumber
     document.getElementById(id).innerText = totalAmount
 
 }
