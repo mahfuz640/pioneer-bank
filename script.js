@@ -27,9 +27,9 @@ withdrawBtn.addEventListener("click", function() {
 })
 
 function getInputNumber(id) {
-    const withdrawAmount = document.getElementById(id).value;
-    const withdrawNumber = parseFloat(withdrawAmount);
-    return withdrawNumber;
+    const amount = document.getElementById(id).value;
+    const amountNumber = parseFloat(amount);
+    return amountNumber;
 }
 
 function updateSpanText(id, depositNumber) {
